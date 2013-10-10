@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+     
+    <ExpandableListView
+        android:id="@+id/listV_main"
+        android:layout_width="fill_parent"
+        android:layout_height="386dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btnAdd"
+        android:layout_marginTop="17dp"
+        android:childDivider="#1CD1FF"
+        android:divider="#1CD1FF"
+        android:dividerHeight="1.3sp"
+        android:groupIndicator="@null" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="281dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="6dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/desc"
+        android:src="@drawable/add_task_rounded_cut" />
+
+    <EditText
+        android:id="@+id/edit_message"
+        android:layout_width="183dp"
+        android:layout_height="60dp"
+        android:layout_above="@+id/listV_main"
+        android:layout_alignLeft="@+id/imageView"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="6dp"
+        android:background="@null"
+        android:hint="@string/enter_task_title"
+        android:textColorHint="#D0D0D0"
+        android:textColor="#707070" 
+        android:textSize="22sp"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:focusable="true"
+        android:background="@null"
+        android:layout_width="44dp"
+        android:layout_height="51dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="11dp"
+        android:layout_marginRight="6dp"
+        android:layout_alignRight="@+id/imageView"
+        android:gravity="top" />
+    
+    <ImageView
+        android:id="@+id/no_tasks_image"
+        android:layout_width="149dp"
+        android:layout_height="170dp"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/no_tasks_alert"
+        android:gravity="top"
+        android:src="@drawable/no_tasks_new" />
+    
+    <LinearLayout
+        android:id="@+id/undobar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="20dp"
+        android:alpha="100"
+        android:background="#808080"
+        android:dividerPadding="11dp"
+        android:padding="4dp"
+        android:visibility="gone" >
+
+    
+
+        <Button
+            android:id="@+id/undobar_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:background="#808080"
+            android:drawableLeft="@drawable/undo"
+            android:onClick="undoTaskDeletion"
+            android:text="@string/undo"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#fff" />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="100dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:contentDescription="@string/footer"
+        android:scaleType="fitXY"
+        android:src="@drawable/footer" />
+
+</RelativeLayout>

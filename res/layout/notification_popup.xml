@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <TextView
+        android:id="@+id/set_repeating_text"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="105dp"
+        android:hint="@string/set_repeating"
+        android:textSize="20sp"
+        android:textStyle="italic" />
+    
+    <Switch
+        android:id="@+id/switcRepeating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="105dp"
+        android:layout_marginTop="38dp"
+        android:textStyle="italic"
+        android:soundEffectsEnabled="true"
+        android:textColor="#3399cc" />
+
+  	<TimePicker
+        android:id="@+id/timePicker_create_act"
+        android:layout_marginTop="100dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:soundEffectsEnabled="true" />
+
+  	<DatePicker
+        android:id="@+id/datePicker_create_act"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+      	android:layout_marginLeft="0dp"
+        android:layout_marginTop="330dp"
+        android:calendarViewShown="false"
+        android:soundEffectsEnabled="true" />
+   
+    <Spinner
+        android:id="@+id/interval_spinner"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="60dp"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:entries="@array/interval_array" />
+
+</FrameLayout>
