@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/taskDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="55dp"
+        android:focusable="false"
+        android:text="@string/default_description"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#707070"
+        android:textStyle="italic" />
+    
+    <TextView
+        android:id="@+id/taskNotification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line1"
+        android:layout_marginLeft="55dp"
+        android:focusable="false"
+        android:text="@string/default_notification"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#707070"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/taskLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line2"
+        android:layout_marginLeft="55dp"
+        android:focusable="false"
+        android:text="@string/default_location"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#707070"
+        android:textStyle="italic" />
+
+    <ImageView
+        android:id="@+id/child_icon"
+        android:layout_width="30dp"
+        android:layout_height="33dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="19dp"
+        android:contentDescription="@string/child_img"
+        android:src="@drawable/app_icon" />
+    
+    <View
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/taskDescription"
+        android:layout_marginLeft="55dp"
+        android:background="#b8dbee" />
+
+    <View
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/taskNotification"
+        android:layout_marginLeft="55dp"
+        android:background="#b8dbee" />
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:descendantFocusability="blocksDescendants" >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="274dip"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:singleLine="true"
+        android:paddingRight="5dp"
+        android:textColor="#707070"
+        android:autoLink="all"
+        android:textSize="22sp"
+        android:textStyle="italic" />
+
+    <CheckBox
+        android:id="@+id/btnDone"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true" />
+
+    <ImageButton
+        android:id="@+id/setNotification"
+        android:layout_width="30dp"
+        android:layout_height="33dp"
+        android:layout_marginLeft="2dp"
+        android:layout_toRightOf="@+id/setImportent"
+        android:layout_centerInParent="true"
+        android:background="@drawable/alarm_gray3"
+        android:contentDescription="@string/desc" >
+    </ImageButton>
+
+    <ImageButton
+        android:id="@+id/setImportent"
+        android:layout_width="5dp"
+        android:layout_height="51dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:background="@drawable/spacer"
+        android:contentDescription="@string/desc" >
+    </ImageButton>
+    
+</RelativeLayout>

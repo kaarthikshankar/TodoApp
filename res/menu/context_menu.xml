@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/editTitle"
+        android:title="Edit Task Title"/>
+    <item
+        android:id="@+id/editDescription"
+        android:title="Edit Task Description"/>
+    <item
+        android:id="@+id/markImportant"
+        android:title="Mark As Important"/>
+    <item
+        android:id="@+id/deleteTask"
+        android:title="Delete Task"/>
+    <item
+        android:id="@+id/setLocation"
+        android:title="Set Task Location"/>
+     <item
+        android:id="@+id/share"
+        android:title="Share Task"/>
+
+</menu>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/delete_all"
+        android:title="Delete all tasks" />
+    
+    <item
+        android:id="@+id/change_language"
+        android:title="Change Language (Hebrew)" />
+    
+    <item
+        android:id="@+id/change_notification_sound"
+        android:title="Change Alert Sound (LOUD)" />
+
+    <item
+        android:id="@+id/help"
+        android:title="Help"/>
+</menu>

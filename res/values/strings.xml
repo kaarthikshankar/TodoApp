@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">todo!</string>
+    <string name="enter_task_title">Enter task title…</string>
+    <string name="desc">alarm button</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="deleted">Deleted</string>
+    <string name="undo">Undo</string>
+    <string name="task_description">task description</string>
+    <string name="set_repeating">set repeating</string>
+    <string name="no_tasks_alert">an alert for when there are no tasks</string>
+    <string name="alert_dialog_ok">OK</string>
+    <string name="alert_dialog_cancel">Cancel</string>
+    <string name="default_description">No Description</string>
+    <string name="default_notification">No Notification</string>
+    <string name="default_location">No Location</string>
+    <string name="footer">Footer</string>
+    <string name="send_to">Share Your Task!</string>
+    <string name="child_img">child image</string>
+    
+    <string-array name="interval_array">
+        <item>Once a day</item>
+        <item>Once a week</item>
+    </string-array>
+    
+</resources>
